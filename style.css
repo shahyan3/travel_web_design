@@ -73,7 +73,9 @@ header {
   padding: 1rem;
   text-decoration: none;
   color: black;
-  font-family: "Libre Baskerville", serif;
+  font-family: "Open Sans", sans-serif;
+
+  font-size: 1.3rem;
 }
 
 .nav li a:hover {
@@ -95,7 +97,6 @@ header {
   position: relative;
   top: 37vh;
   width: 90%;
-  /* font-family: 'Open Sans', sans-serif; */
 }
 #hero-headline,
 #hero-subheadline {
@@ -320,6 +321,56 @@ header {
   -webkit-box-shadow: 0px 3px 7px 5px rgba(156, 156, 156, 1);
   -moz-box-shadow: 0px 3px 7px 5px rgba(156, 156, 156, 1);
   box-shadow: 0px 3px 7px 5px rgba(156, 156, 156, 1);
+}
+
+/* About Us */
+.about-us {
+  position: relative;
+  background-image: url("./images/final/about-us.jpg");
+  height: 700px;
+  background-position-y: 50%;
+  background-repeat: no-repeat;
+  color: white;
+}
+.about-wrapper {
+  position: absolute;
+  background-color: black;
+  height: 700px;
+  opacity: 0.5;
+  width: 100%;
+  top: 0;
+  z-index: 1;
+}
+.about-copy {
+  position: relative;
+  top: 20%;
+  left: 5%;
+  width: 90%;
+  padding: 1rem;
+  font-weight: bold;
+  z-index: 3;
+}
+.about-copy h2 {
+  margin: 1rem 0;
+}
+.about-btn {
+  background-color: red;
+  font-family: "Roboto", sans-serif;
+  font-size: 90%;
+  padding: 0.8rem;
+  border-radius: 20px;
+  font-style: none;
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  position: relative;
+  top: 1.5rem;
+  left: 0.1rem;
+}
+@media only screen and (min-width: 768px) {
+  .about-copy {
+    top: 35%;
+  }
 }
 
 /*
