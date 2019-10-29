@@ -1,7 +1,7 @@
 /*
   Author; Shahyan Hasan
   Version: 1.0
-  CSS Style file for Lemon Cheesecake Factory (Responsive Mobile first design)
+  CSS Style file for WhereToGo Travel (Responsive Mobile first design)
 */
 
 * {
@@ -9,6 +9,18 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  /* font-size: 2rem; */
+}
+
+/* h4 {
+  font-size: 3rem;
+} */
 
 html {
   font-size: 14px;
@@ -30,6 +42,8 @@ header {
 
 .main {
   max-width: 1440px;
+  font-family: "Open Sans", sans-serif;
+
   font-size: 1rem;
 }
 
@@ -48,10 +62,11 @@ header {
 /*
     Navigation
   */
+
 .nav {
   display: flex;
   list-style: none;
- }
+}
 
 .nav li a {
   font-style: none;
@@ -66,114 +81,187 @@ header {
 }
 
 /*
-    Home page   
-  */
- .hero {
+  Home page   
+*/
+
+.hero {
   background-image: url("images/final/hero.jpg");
   background-repeat: no-repeat;
-  height: 90vh;
-  text-align:center;
-  }
+  height: 100vh;
+  text-align: center;
+}
+.hero-content {
+  margin: auto;
+  position: relative;
+  top: 37vh;
+  width: 90%;
+  /* font-family: 'Open Sans', sans-serif; */
+}
+#hero-headline,
+#hero-subheadline {
+  color: white;
+}
+
+#hero-headline {
+  font-size: 1rem;
+}
+
+#hero-subheadline {
+  font-size: 3rem;
+  font-style: italic;
+}
+
+#hero-btn {
+  background-color: red;
+  border: none;
+  margin-top: 20px;
+  padding: 0.7rem;
+  font-family: "Roboto", sans-serif;
+}
+#hero-btn a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 769px) {
   .hero-content {
-    margin: auto;
-    position: relative;
-    top: 37vh;
-    width: 90%;
-    font-family: 'Open Sans', sans-serif;
-
+    width: 100%;
   }
 
-  #hero-headline, #hero-subheadline {
-    color: white;
-    }
-
- #hero-headline {
-    font-size: 1rem;
-    }   
-
-   #hero-subheadline {
-     font-size: 3rem;
-    font-style: italic;
-   }
-
-   #hero-btn {
-    background-color: red;
-    border: none;
-    margin-top: 20px;
-    padding: 0.7rem;
-    font-family: 'Roboto', sans-serif;
-    }
-    #hero-btn a {
-      color: white;
-       font-weight: bold;
-      text-decoration: none;
-
-    }
-
-   @media only screen and (min-width: 769px) {
-    .hero-content {
-      width: 100%;
-    }
-
-   #hero-headline {
-     font-size: 4rem;
-   }   
-
-   #hero-subheadline {
-     font-size: 3rem;
-    }
+  #hero-headline {
+    font-size: 4rem;
   }
 
+  #hero-subheadline {
+    font-size: 3rem;
+  }
+}
 
-  /* SEARCH WRAPPER */
-  .search-wrapper {
-    height: 20vh;
-    text-align: center;
-   }
+/* SEARCH WRAPPER */
+.search-wrapper {
+  /* height: 20vh; */
+  text-align: center;
+}
+.search-wrapper-headline {
+  margin: 70px 0rem 20px 0rem;
+  font-size: 2rem;
+}
 
-    .search-form {
-      position: relative;
-      top: 10vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: 2rem;
-    }
+.search-form {
+  position: relative;
+  /* top: 10vh; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
 
-      .search-form-select {
-        border-radius: 10px;
-        padding: 0.5rem 1.2rem;
-        background-color: #f8f8f8;
-        margin: 0 0.2rem;
-        border-color: orange;
-        border-width: 1px;
-        font-family: 'Roboto', sans-serif;
-      }
+.search-form-select {
+  border-radius: 10px;
+  padding: 0.5rem 1.2rem;
+  background-color: #f8f8f8;
+  margin: 0 0.2rem;
+  border-color: orange;
+  border-width: 1px;
+  font-family: "Roboto", sans-serif;
+}
 
-      .search-form-submit-btn {
-        border-radius: 10px;
-        padding: 0.5rem 1.2rem;
-        background-color: orange;
-        margin: 0 0.2rem;
-        border:none;
+.search-form-submit-btn {
+  border-radius: 10px;
+  padding: 0.5rem 1.2rem;
+  background-color: orange;
+  margin: 0 0.2rem;
+  border: none;
 
-        font-family: 'Roboto', sans-serif;
-        color:white;
-      }
- 
+  font-family: "Roboto", sans-serif;
+  color: white;
+}
 
- @media only screen and (min-width: 426px) {
-    .search-form-submit-btn, .search-form-select {
-      font-size: 1.2rem;
-    }
-  @media only screen and (min-width: 1025px) {
-    .search-form-submit-btn, .search-form-select {
-      font-size: 1.6rem;
-    }
+@media only screen and (min-width: 426px) {
+  .search-form-submit-btn,
+  .search-form-select {
+    font-size: 1.2rem;
+  }
+}
+@media only screen and (min-width: 1025px) {
+  .search-form-submit-btn,
+  .search-form-select {
+    font-size: 1.6rem;
+  }
+}
 
+/* Featured Section */
+.feature-dest {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-top: 70px;
+}
+.featured-image {
+  -webkit-box-shadow: 0px 3px 7px 5px rgba(156, 156, 156, 1);
+  -moz-box-shadow: 0px 3px 7px 5px rgba(156, 156, 156, 1);
+  box-shadow: 0px 3px 7px 5px rgba(156, 156, 156, 1);
+}
+.featured-image img {
+  width: 100%;
+}
 
+.featured-content {
+  width: 90%;
+  margin: 1rem auto;
+}
 
+.featured-country-name {
+  color: orange;
+  font-weight: bold;
+}
+.featured-headline {
+  font-size: 2.2rem;
+  margin: 0.5rem 0;
+}
+.featured-btn {
+  background-color: blue;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-style: none;
+  border-radius: 100px;
+  padding: 1rem;
+  position: relative;
+  top: 2.5rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 90%;
+}
+@media only screen and (min-width: 769px) {
+  .feature-dest:nth-child(1) {
+    flex-direction: row;
+  }
+  .feature-dest:nth-child(2) {
+    flex-direction: row-reverse;
+  }
+  .feature-dest:nth-child(3) {
+    flex-direction: row;
+  }
 
+  .featured-content {
+    width: 50%;
+    margin: 1rem auto;
+    align-self: center;
+    padding-left: 2rem;
+  }
+  .featured-headline {
+    font-size: 3rem;
+  }
+  .featured-desc {
+    width: 80%;
+  }
+}
+@media only screen and (min-width: 1025px) {
+  .featured-btn {
+    font-size: 100%;
+  }
+}
 
 /*
     FOOTER 
@@ -194,4 +282,3 @@ footer p a {
   color: white;
   text-decoration: none;
 }
-
