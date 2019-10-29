@@ -15,7 +15,7 @@ h1 {
 }
 
 h2 {
-  /* font-size: 2rem; */
+  font-size: 2rem;
 }
 
 /* h4 {
@@ -142,6 +142,7 @@ header {
 .search-wrapper {
   /* height: 20vh; */
   text-align: center;
+  margin-bottom: 70px;
 }
 .search-wrapper-headline {
   margin: 70px 0rem 20px 0rem;
@@ -192,11 +193,14 @@ header {
 }
 
 /* Featured Section */
+.featured {
+  background-color: #f8f8f8;
+  padding: 1rem 0;
+}
 .feature-dest {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  margin-top: 70px;
 }
 .featured-image {
   -webkit-box-shadow: 0px 3px 7px 5px rgba(156, 156, 156, 1);
@@ -209,7 +213,7 @@ header {
 
 .featured-content {
   width: 90%;
-  margin: 1rem auto;
+  margin: 5rem auto;
 }
 
 .featured-country-name {
@@ -233,7 +237,7 @@ header {
   font-family: "Roboto", sans-serif;
   font-size: 90%;
 }
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 1025px) {
   .feature-dest:nth-child(1) {
     flex-direction: row;
   }
@@ -256,11 +260,66 @@ header {
   .featured-desc {
     width: 80%;
   }
-}
-@media only screen and (min-width: 1025px) {
   .featured-btn {
     font-size: 100%;
   }
+}
+
+/* Destination panel */
+.destinations-wrapper {
+  margin: 40px auto;
+  width: 90%;
+}
+.destination-header {
+  margin-bottom: 30px;
+  padding: 1rem;
+  background-color: #f8f8f8;
+  color: rgb(99, 99, 99);
+  border-left: 5px solid red;
+}
+
+.destination-pannel {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.destination-card {
+  height: 400px;
+  width: 300px;
+  margin: 0.5rem;
+  border-bottom-right-radius: 25px;
+  background-color: green;
+  font-family: sans-serif;
+}
+.destination-card.one {
+  background-image: url("images/final/egypt-dest.jpg");
+  background-repeat: no-repeat;
+}
+.destination-card.two {
+  background-image: url("images/final/india-dest.jpg");
+  background-repeat: no-repeat;
+}
+.destination-card.three {
+  background-image: url("images/final/italy-dest.jpg");
+  background-repeat: no-repeat;
+}
+.destination-card h3 {
+  color: white;
+  position: relative;
+  top: 20rem;
+  text-align: center;
+  font-size: 2rem;
+  background-color: black;
+  opacity: 0.7;
+  width: 80%;
+  border-radius: 5px;
+  margin: auto;
+}
+.destination-card:hover {
+  -webkit-box-shadow: 0px 3px 7px 5px rgba(156, 156, 156, 1);
+  -moz-box-shadow: 0px 3px 7px 5px rgba(156, 156, 156, 1);
+  box-shadow: 0px 3px 7px 5px rgba(156, 156, 156, 1);
 }
 
 /*
