@@ -1,0 +1,197 @@
+/*
+  Author; Shahyan Hasan
+  Version: 1.0
+  CSS Style file for Lemon Cheesecake Factory (Responsive Mobile first design)
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 14px;
+}
+
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 1440px;
+  margin: auto;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 2rem;
+}
+
+.main {
+  max-width: 1440px;
+  font-size: 1rem;
+}
+
+/*
+    LOGO
+*/
+
+.logo-wrap a {
+  text-decoration: none;
+  padding: 1rem;
+  font-size: 1.5rem;
+  background-color: black;
+  color: white;
+}
+
+/*
+    Navigation
+  */
+.nav {
+  display: flex;
+  list-style: none;
+ }
+
+.nav li a {
+  font-style: none;
+  padding: 1rem;
+  text-decoration: none;
+  color: black;
+  font-family: "Libre Baskerville", serif;
+}
+
+.nav li a:hover {
+  text-decoration: underline;
+}
+
+/*
+    Home page   
+  */
+ .hero {
+  background-image: url("images/final/hero.jpg");
+  background-repeat: no-repeat;
+  height: 90vh;
+  text-align:center;
+  }
+  .hero-content {
+    margin: auto;
+    position: relative;
+    top: 37vh;
+    width: 90%;
+    font-family: 'Open Sans', sans-serif;
+
+  }
+
+  #hero-headline, #hero-subheadline {
+    color: white;
+    }
+
+ #hero-headline {
+    font-size: 1rem;
+    }   
+
+   #hero-subheadline {
+     font-size: 3rem;
+    font-style: italic;
+   }
+
+   #hero-btn {
+    background-color: red;
+    border: none;
+    margin-top: 20px;
+    padding: 0.7rem;
+    font-family: 'Roboto', sans-serif;
+    }
+    #hero-btn a {
+      color: white;
+       font-weight: bold;
+      text-decoration: none;
+
+    }
+
+   @media only screen and (min-width: 769px) {
+    .hero-content {
+      width: 100%;
+    }
+
+   #hero-headline {
+     font-size: 4rem;
+   }   
+
+   #hero-subheadline {
+     font-size: 3rem;
+    }
+  }
+
+
+  /* SEARCH WRAPPER */
+  .search-wrapper {
+    height: 20vh;
+    text-align: center;
+   }
+
+    .search-form {
+      position: relative;
+      top: 10vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 2rem;
+    }
+
+      .search-form-select {
+        border-radius: 10px;
+        padding: 0.5rem 1.2rem;
+        background-color: #f8f8f8;
+        margin: 0 0.2rem;
+        border-color: orange;
+        border-width: 1px;
+        font-family: 'Roboto', sans-serif;
+      }
+
+      .search-form-submit-btn {
+        border-radius: 10px;
+        padding: 0.5rem 1.2rem;
+        background-color: orange;
+        margin: 0 0.2rem;
+        border:none;
+
+        font-family: 'Roboto', sans-serif;
+        color:white;
+      }
+ 
+
+ @media only screen and (min-width: 426px) {
+    .search-form-submit-btn, .search-form-select {
+      font-size: 1.2rem;
+    }
+  @media only screen and (min-width: 1025px) {
+    .search-form-submit-btn, .search-form-select {
+      font-size: 1.6rem;
+    }
+
+
+
+
+
+/*
+    FOOTER 
+  */
+footer {
+  background-color: black;
+  padding: 2rem;
+  color: white;
+  text-align: center;
+  font-size: 90%;
+}
+
+footer p {
+  font-size: 90%;
+}
+
+footer p a {
+  color: white;
+  text-decoration: none;
+}
+
