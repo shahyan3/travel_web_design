@@ -87,7 +87,7 @@ header {
 */
 
 .hero {
-  background-image: url("images/final/hero.jpg");
+  background-image: url("images/final/home/hero.jpg");
   background-repeat: no-repeat;
   height: 100vh;
   text-align: center;
@@ -294,15 +294,15 @@ header {
   font-family: sans-serif;
 }
 .destination-card.one {
-  background-image: url("images/final/egypt-dest.jpg");
+  background-image: url("./images/final/home/egypt-dest.jpg");
   background-repeat: no-repeat;
 }
 .destination-card.two {
-  background-image: url("images/final/india-dest.jpg");
+  background-image: url("images/final/home/india-dest.jpg");
   background-repeat: no-repeat;
 }
 .destination-card.three {
-  background-image: url("images/final/italy-dest.jpg");
+  background-image: url("images/final/home/italy-dest.jpg");
   background-repeat: no-repeat;
 }
 .destination-card h3 {
@@ -326,7 +326,7 @@ header {
 /* About Us */
 .about-us {
   position: relative;
-  background-image: url("./images/final/about-us.jpg");
+  background-image: url("./images/final/home/about-us.jpg");
   height: 700px;
   background-position-y: 50%;
   background-repeat: no-repeat;
@@ -373,6 +373,90 @@ header {
   }
 }
 
+/* DESTINATION PAGE */
+
+/* EGYPT */
+.tour-image-egypt {
+  height: 350px;
+  background-image: url("images/final/destination/egypt/egypt-bg.png");
+  background-repeat: no-repeat;
+  background-position-y: 50%;
+  position: relative;
+}
+
+/* INDIA */
+.tour-image-india {
+  height: 350px;
+  background-image: url("images/final/destination/india/india-bg.jpg");
+  background-repeat: no-repeat;
+  background-position-y: 50%;
+  position: relative;
+}
+.india-tour {
+  background-color: #fdf6f6;
+}
+
+/* ITALY */
+.tour-image-italy {
+  height: 350px;
+  background-image: url("images/final/destination/italy/italy-bg.jpg");
+  background-repeat: no-repeat;
+  background-position-y: 40%;
+  position: relative;
+}
+
+.tour-overlay {
+  position: absolute;
+  top: 0rem;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+  height: 350px;
+}
+
+.tour-overview {
+  padding: 3rem 1rem 0 1rem;
+  display: flex;
+  flex-direction: column-reverse;
+}
+.tour-copy {
+  padding: 1rem;
+}
+.ratings-box {
+  text-align: center;
+  margin-top: 1rem;
+}
+.tour-feature-img {
+  width: 100%;
+}
+.price-box {
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 1.2rem;
+  color: red;
+  font-family: "Roboto", sans-serif;
+}
+
+@media only screen and (min-width: 768px) {
+  .tour-overview {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .tour-copy {
+    align-self: center;
+  }
+  .ratings-box {
+    text-align: left;
+    margin-top: 1rem;
+    padding-left: 1rem;
+  }
+  .tour-copy {
+    width: 40%;
+  }
+  .price-box {
+    text-align: left;
+  }
+}
 /*
     FOOTER 
   */
