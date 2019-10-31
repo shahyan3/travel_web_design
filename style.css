@@ -17,11 +17,18 @@ h1 {
 h2 {
   font-size: 2rem;
 }
+h3 {
+  font-size: 1.8rem;
+}
 
-/* h4 {
-  font-size: 3rem;
-} */
-
+h4 {
+  font-size: 1.5rem;
+  margin: 0.2rem;
+}
+h5 {
+  font-size: 1.2rem;
+  font-weight: normal;
+}
 html {
   font-size: 14px;
 }
@@ -43,7 +50,6 @@ header {
 .main {
   max-width: 1440px;
   font-family: "Open Sans", sans-serif;
-
   font-size: 1rem;
 }
 
@@ -290,9 +296,10 @@ header {
   width: 300px;
   margin: 0.5rem;
   border-bottom-right-radius: 25px;
-  background-color: green;
+  background-color: black;
   font-family: sans-serif;
 }
+
 .destination-card.one {
   background-image: url("./images/final/home/egypt-dest.jpg");
   background-repeat: no-repeat;
@@ -305,6 +312,7 @@ header {
   background-image: url("images/final/home/italy-dest.jpg");
   background-repeat: no-repeat;
 }
+
 .destination-card h3 {
   color: white;
   position: relative;
@@ -384,6 +392,20 @@ header {
   position: relative;
 }
 
+/* Egypt Tours */
+.destination-card.egypt.one {
+  background-image: url("./images/final/tours/egypt-tour-1/tour-head.jpg");
+  background-repeat: no-repeat;
+}
+.destination-card.egypt.two {
+  background-image: url("images/final/home/egypt-featured.jpg");
+  background-repeat: no-repeat;
+}
+.destination-card.egypt.three {
+  background-image: url("images/final/tours/egypt-tour-3/egypt-featured.jpg");
+  background-repeat: no-repeat;
+}
+
 /* INDIA */
 .tour-image-india {
   height: 350px;
@@ -394,6 +416,25 @@ header {
 }
 .india-tour {
   background-color: #fdf6f6;
+}
+
+/* INDIA TOUR */
+.destination-card.india.one {
+  background-image: url("./images/final/home/india-dest.jpg");
+  background-repeat: no-repeat;
+}
+.destination-card.india.two {
+  background-image: url("images/final/tours/india-tour-2/india-feature.jpg");
+  background-repeat: no-repeat;
+  background-position-y: 35%;
+  background-position-x: 50%;
+}
+
+.destination-card.india.three {
+  background-image: url("images/final/tours/india-tour-3/india-small.jpg");
+  background-repeat: no-repeat;
+  background-position-y: 60%;
+  background-position-x: 60%;
 }
 
 /* ITALY */
@@ -456,6 +497,190 @@ header {
   .price-box {
     text-align: left;
   }
+}
+
+/* MY TOUR PAGE */
+
+/* EGYPT */
+.my-tour-image.egypt-tour-1 {
+  height: 350px;
+  background-image: url("images//final/tours/egypt-tour-1/tour-head.jpg");
+  background-repeat: no-repeat;
+  background-position-y: 40%;
+  position: relative;
+}
+.my-tour-image.egypt-tour-2 {
+  height: 350px;
+  background-image: url("images//final/tours/egypt-tour-2/egypt-header.jpg");
+  background-repeat: no-repeat;
+  background-position-y: 40%;
+  position: relative;
+}
+.my-tour-image.egypt-tour-3 {
+  height: 350px;
+  background-image: url("images//final/tours/egypt-tour-3/egypt-header.jpg");
+  background-repeat: no-repeat;
+  background-position-y: 70%;
+  position: relative;
+}
+/* INDIA */
+.my-tour-image.india-tour-1 {
+  height: 350px;
+  background-image: url("images//final/tours/india-tour-1/india-header.jpg");
+  background-repeat: no-repeat;
+  background-position-y: 50%;
+  position: relative;
+}
+.my-tour-image.india-tour-2 {
+  height: 350px;
+  background-image: url("images//final/tours/india-tour-2/india-feature.jpg");
+  background-repeat: no-repeat;
+  background-position-y: 50%;
+  position: relative;
+}
+.my-tour-image.india-tour-3 {
+  height: 350px;
+  background-image: url("images//final/tours/india-tour-3/india-feature.jpg");
+  background-repeat: no-repeat;
+  background-position-y: 30%;
+  background-position-x: 30%;
+  position: relative;
+}
+
+/* ITALY */
+.my-tour-image {
+  height: 350px;
+  background-image: url("images//final/tours/egypt-tour-1/tour-head.jpg");
+  background-repeat: no-repeat;
+  background-position-y: 40%;
+  position: relative;
+}
+
+.my-tour-box {
+  position: relative;
+  -webkit-box-shadow: 0px 10px 8px -3px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 10px 8px -3px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 10px 8px -3px rgba(0, 0, 0, 0.75);
+}
+.my-tour-overview {
+  -webkit-box-shadow: 0px 10px 8px -13px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 10px 8px -13px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 10px 8px -13px rgba(0, 0, 0, 0.75);
+  background-color: white;
+  /* position: absolute; */
+
+  width: 70%;
+  height: auto;
+  z-index: 10;
+  padding: 2rem 1rem;
+  text-align: center;
+  margin: auto;
+}
+
+.my-tour-highlight-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 2rem;
+}
+.my-tour-highlight {
+  color: white;
+  background-color: rebeccapurple;
+  margin: 1rem;
+  padding: 8px;
+  width: auto;
+}
+.highlight-text {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@media only screen and (min-width: 425px) {
+  .my-tour-overview {
+    height: auto;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .my-tour-overview {
+    position: absolute;
+    top: 60%;
+    left: 15%;
+    height: auto;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .my-tour-highlight {
+    width: 200px;
+  }
+}
+
+.my-tour-brief-wrap {
+  /* padding: 3rem 5rem; */
+  margin: 5rem auto;
+}
+
+.my-tour-brief {
+  width: 70%;
+  margin: auto;
+  font-size: 1.2rem;
+}
+.my-tour-brief h2 {
+  margin-bottom: 10px;
+  color: rgb(48, 48, 48);
+}
+@media only screen and (min-width: 1024px) {
+  .my-tour-brief-wrap {
+    padding: 3rem 5rem;
+    margin: 10rem auto 1rem auto;
+  }
+}
+
+.my-tour-details img {
+  width: 100%;
+}
+
+.my-tour-content {
+  padding: 3rem;
+}
+.my-tour-content li {
+  margin: 10px 0;
+}
+
+@media only screen and (min-width: 1024px) {
+  .my-tour-details-wrapper {
+    display: flex;
+  }
+  .my-tour-details {
+    width: 50%;
+  }
+}
+
+.my-tour-content .booking-form input {
+  padding: 1rem;
+  /* border: 1px black solid; */
+  margin: 0.2rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.my-tour-content h4 {
+  background-color: #f8f8f8;
+  padding: 2rem;
+  font-family: "Roboto", sans-serif;
+}
+.booking-form {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  background-color: orange;
+  padding: 4rem;
+  /* margin: 2rem 0; */
+}
+.booking-btn {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+
+  border: none;
 }
 /*
     FOOTER 
