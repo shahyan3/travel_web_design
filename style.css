@@ -446,6 +446,27 @@ header {
   position: relative;
 }
 
+.destination-card.italy.one {
+  background-image: url("images/final/home/rome-featured.jpg");
+  background-repeat: no-repeat;
+  background-position-y: 60%;
+  background-position-x: 60%;
+}
+
+.destination-card.italy.two {
+  background-image: url("images/final/tours/italy-tour-2/italy-feature.jpg");
+  background-repeat: no-repeat;
+  background-position-y: 35%;
+  background-position-x: 60%;
+}
+
+.destination-card.italy.three {
+  background-image: url("images/final/tours/italy-tour-3/italy-feature.jpg");
+  background-repeat: no-repeat;
+  background-position-y: 35%;
+  background-position-x: 60%;
+}
+
 .tour-overlay {
   position: absolute;
   top: 0rem;
@@ -504,7 +525,7 @@ header {
 /* EGYPT */
 .my-tour-image.egypt-tour-1 {
   height: 350px;
-  background-image: url("images//final/tours/egypt-tour-1/tour-head.jpg");
+  background-image: url("images/final/tours/egypt-tour-1/tour-head.jpg");
   background-repeat: no-repeat;
   background-position-y: 40%;
   position: relative;
@@ -548,11 +569,25 @@ header {
 }
 
 /* ITALY */
-.my-tour-image {
+.my-tour-image.italy-tour-1 {
   height: 350px;
-  background-image: url("images//final/tours/egypt-tour-1/tour-head.jpg");
+  background-image: url("images/final/tours/italy-tour-1/italy-header.jpg");
   background-repeat: no-repeat;
   background-position-y: 40%;
+  position: relative;
+}
+.my-tour-image.italy-tour-2 {
+  height: 350px;
+  background-image: url("images/final/tours/italy-tour-2/italy-feature.jpg");
+  background-repeat: no-repeat;
+  background-position-y: 40%;
+  position: relative;
+}
+.my-tour-image.italy-tour-3 {
+  height: 350px;
+  background-image: url("images/final/tours/italy-tour-3/italy-feature.jpg");
+  background-repeat: no-repeat;
+  background-position-y: 50%;
   position: relative;
 }
 
@@ -682,6 +717,18 @@ header {
 
   border: none;
 }
+
+/* ABOUT */
+
+/* EGYPT */
+.image-about {
+  height: 350px;
+  background-image: url("images/final/about/about.jpg");
+  background-repeat: no-repeat;
+  background-position-y: 50%;
+  position: relative;
+}
+
 /*
     FOOTER 
   */
